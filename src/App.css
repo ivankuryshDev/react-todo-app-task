@@ -1,0 +1,237 @@
+*:hover{
+  outline: 1px dashed red;
+}
+html{ 
+  height:100%; 
+}
+body{
+  background: #cac9c9;
+  background-image:url(https://img5.goodfon.ru/original/1366x768/e/cb/les-reka-priroda-5.jpg);
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.App {
+  /* text-align: left; */
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+}
+
+.App-header {
+  height: 60px;
+  padding: 10px;
+  color: white;
+}
+.App-footer {
+  height: 60px;
+  padding: 10px;
+  color: white;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  height: 50px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.col-sm-3.to-do-lists-column-container{
+  padding-left: 0;
+}
+
+/* main */
+/* main{
+  text-align: center;
+  display: flex;
+  align-content: center;
+  height: 100%;
+  padding-top: 7%;
+}
+.time{
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 12rem;
+}
+.date{
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 1.5rem;
+}
+.greeting{
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 3rem;
+}
+.to-do-lists{
+  background: yellow;
+} */
+/* // Extra small devices (landscape phones, 576px and down) */
+@media (max-width: 575px) {
+  main{
+    text-align: center;
+    display: flex;
+    align-content: center;
+    height: 100%;
+  }
+  .time{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 7rem;
+  }
+  .date{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 1rem;
+  }
+  .greeting{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 2.1rem;
+  }
+  .to-do-lists{
+  }
+  .col-sm-3.to-do-lists-column-container{
+    padding-right: 0;
+  }
+  footer{
+    display: none;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 575px) {
+  /* main */
+  main{
+    text-align: center;
+    display: flex;
+    align-content: center;
+    height: 100%;
+  }
+  .time{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 7rem;
+  }
+  .date{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 1rem;
+  }
+  .greeting{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 2.1rem;
+  }
+  .to-do-lists{
+  }
+  .col-sm-3.to-do-lists-column-container{
+    overflow-y: auto;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 767px) {
+  /* main */
+  main{
+    text-align: center;
+    display: flex;
+    align-content: center;
+    height: 100%;
+  }
+  .time{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 9rem;
+  }
+  .date{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 1.2rem;
+  }
+  .greeting{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 2.4rem;
+  }
+  .to-do-lists{
+    overflow-y: auto;
+    color: red;
+    position: relative;
+    max-height: 500px;
+  }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* main */
+  main{
+    text-align: center;
+    display: flex;
+    align-content: center;
+    height: 100%;
+  }
+  .time{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 11rem;
+  }
+  .date{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 1.4rem;
+  }
+  .greeting{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 2.7rem;
+  }
+  .to-do-lists{
+    overflow-y: scroll;
+  }
+  
+
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  /* main */
+  main{
+    text-align: center;
+    display: flex;
+    align-content: center;
+    height: 100%;
+  }
+  .time{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 12rem;
+    /* color: red; */
+  }
+  .date{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 1.3rem;
+  }
+  .greeting{
+    color: #fff;
+    text-shadow: 2px 2px 5px #000;
+    font-size: 3rem;
+  }
+  .to-do-lists{
+    overflow-y: scroll;
+  }
+  
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
