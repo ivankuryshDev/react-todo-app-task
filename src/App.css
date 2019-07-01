@@ -8,7 +8,6 @@ body{
   background-image:url(https://img5.goodfon.ru/original/1366x768/c/49/lake-bled-bled-slovenia-assumption-of-mary-pilgrimage-chur-2.jpg);
   height: 100%;
   position: relative;
-  /* background-repeat: no-repeat; */
   background-size: cover;
 }
 
@@ -935,5 +934,8 @@ li.list-group-item.box1{
   padding: 0;
   margin: 1px;
   margin-bottom: 1px;
-  
+}
+div.col-md-3.to-do-lists-column-container{
+  padding-right: 0;
+  padding-left: 0;
 }
