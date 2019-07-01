@@ -90,9 +90,7 @@ class ToDoLists extends Component {
       this.props.onAddListInput(true);
     }
   }
-
   
-
   render() {
     return (
       <div className="to-do-lists">

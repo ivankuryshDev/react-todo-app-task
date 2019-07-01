@@ -111,8 +111,6 @@ class Main extends Component {
                   </div>
                 </div>
               ) : (
-
-
                 <div className="row">
                   <div className="col-md-9">
                     <Clock />
@@ -128,52 +126,11 @@ class Main extends Component {
                       onEditList={this.onEditList}
                       onAddTask={this.onAddTask}
                       handleInputChange={this.handleInputChange}
-                      
                       onAddList={this.onAddList}
                       onAddListInput={this.onAddListInput}
                       />
-                    {/* <div className="to-do-lists">
-                      <div className="accordion" id="accordionExample">
-                        {
-                          typeof this.state.lists !== "undefined" ?
-                            (
-                              this.state.lists.map((list) => {
-                                return (
-                                  <div key={list.id} className="">
-                                    <div className="card">
-                                      <ListItem
-                                        key={list.id}
-                                        {...list}
-                                        onDeleteList={this.onDeleteList}
-                                        onEditList={this.onEditList}
-                                        onAddTask={this.onAddTask}
-                                        handleInputChange={this.handleInputChange}
-                                      />
-                                    </div>
-                                  </div>
-                                );
-                              })
-                            ) : (
-                              <div></div>
-                            )
-                        }
-                        {
-                          this.state.isAdded ?
-                            (
-                              <AddList onAddList={this.onAddList} onAddListInput={this.onAddListInput} />
-                            ) : (
-                              <div className="add-list" onClick={this.onAddListInput}>
-                                <span>Add list</span>
-                              </div>
-                            )
-                        }
-                      </div>
-                    </div> */}
                   </div>
                 </div>
-
-
-
               )
           }
         </div>
