@@ -9,7 +9,7 @@ class Footer extends Component {
         <div className="container-fluid">
           <div className="row">
             <div className="App-footer">
-              <span>Footer</span>
+              <span></span>
             </div>
           </div>
         </div>
