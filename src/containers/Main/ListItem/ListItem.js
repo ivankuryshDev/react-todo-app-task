@@ -4,67 +4,59 @@ import{
 	BrowserRouter as Router
 } from 'react-router-dom';
 
-import TaskItem from './taskItem';
-import AddTask from './addTask';
+import TaskItem from './TaskItem/TaskItem';
+import AddTask from '../../../components/AddTask/AddTask';
 class ListItem extends Component {
     constructor(props){
 		super(props);
 		this.state = {
-      isEdit: false,
+      isEdited: false,
       isAdded: false
 		};
-		this.onDeleteList = this.onDeleteList.bind(this);
-		this.onDeleteTask = this.onDeleteTask.bind(this);
-		this.onEdit = this.onEdit.bind(this);
-    this.onEditList = this.onEditList.bind(this);
-    this.onEditTask = this.onEditTask.bind(this);
-    this.onAddTask = this.onAddTask.bind(this);
-    this.onAddTaskInput = this.onAddTaskInput.bind(this);
-    this.handleInputChange = this.handleInputChange.bind(this);
   }
 
-  onDeleteList(){
+  onDeleteList = () => {
     var {onDeleteList, id} = this.props;
 		onDeleteList(id);
   }
 
-  onDeleteTask(taskId){
+  onDeleteTask = (taskId) => {
     var {onDeleteTask, id} = this.props;
     onDeleteTask(id, taskId);
   }
 
-  onEdit(){
-    if(this.state.isEdit){
-      this.setState({ isEdit: false });
+  onEdit = () => {
+    if(this.state.isEdited){
+      this.setState({ isEdited: false });
     }else{
-      this.setState({ isEdit: true });
+      this.setState({ isEdited: true });
     }
   }
 
-  onEditList(event){
+  onEditList = (event) => {
     event.preventDefault();
     this.props.onEditList(this.nameInput.value, this.props.id);
-		this.setState({ isEdit: false });
+		this.setState({ isEdited: false });
   }
 
-  onEditTask(taskId, taskName){
+  onEditTask = (taskId, taskName) => {
     var {onEditTask, id} = this.props;
     onEditTask(id, taskId, taskName);
   }
 
-  onAddTask(name){
+  onAddTask = (name) => {
     var {onAddTask, id} = this.props;
     onAddTask(id, name);
     this.setState({ isAdded: false});
   }
-  onAddTaskInput(){
+  onAddTaskInput = () => {
     if(this.state.isAdded){
       this.setState({ isAdded: false});
     }else{
       this.setState({ isAdded: true});
     }
   }
-  handleInputChange(taskId, value){
+  handleInputChange = (taskId, value) => {
     var {handleInputChange, id} = this.props;
     handleInputChange(id, taskId, value);
   }
@@ -76,7 +68,7 @@ class ListItem extends Component {
             <div className="card-header" id={`heading${id}`}>
               <div className="" type="button" data-toggle="collapse" data-target={`#collapse${id}`} aria-expanded="true" aria-controls={`collapse${id}`}>
                   {
-                    this.state.isEdit ?
+                    this.state.isEdited ?
                     (
                       <form onSubmit={this.onEditList}>
                         <div className="row no-gutters">

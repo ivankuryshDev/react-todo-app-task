@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
 
 class AddTask extends Component {
-	constructor(props){
-		super(props);
-		this.onSubmit = this.onSubmit.bind(this);
-		this.onAddTaskInput = this.onAddTaskInput.bind(this);
-  }
   
-  onAddTaskInput(){
+  onAddTaskInput = () => {
     this.props.onAddTaskInput();
   }
 
-	onSubmit(event){
+	onSubmit = (event) => {
 		event.preventDefault();
     this.props.onAddTask(this.nameInput.value);
 		this.nameInput.value = '';

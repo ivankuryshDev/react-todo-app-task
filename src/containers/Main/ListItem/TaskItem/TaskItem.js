@@ -9,18 +9,14 @@ class TaskItem extends Component {
 		this.state = {
 			isEdit: false
 		};
-		this.onDeleteTask = this.onDeleteTask.bind(this);
-		this.onEdit = this.onEdit.bind(this);
-		this.onEditTask = this.onEditTask.bind(this);
-		this.handleInputChange = this.handleInputChange.bind(this);
   }
 
-  onDeleteTask(){
+  onDeleteTask = () => {
     const {onDeleteTask, id} = this.props;
 		onDeleteTask(id);
   }
 
-  onEdit(){
+  onEdit = () =>{
     if(this.state.isEdit){
       this.setState({ isEdit: false });
     }else{
@@ -28,13 +24,13 @@ class TaskItem extends Component {
     }
   }
 
-  onEditTask(event){
+  onEditTask = (event) => {
     event.preventDefault();
     this.props.onEditTask(this.props.id, this.nameInput.value);
 		this.setState({ isEdit: false });
   }
 
-  handleInputChange(event){
+  handleInputChange = (event) => {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;

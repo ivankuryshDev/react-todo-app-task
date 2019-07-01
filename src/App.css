@@ -22,7 +22,7 @@ body{
   height: 60px;
   padding: 10px;
   color: white;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .App-footer {
   height: 60px;
@@ -72,10 +72,15 @@ div.btn.btn-link{
   width: 100%;
 }
 .reset{
-  position: relative;
-  display: block;
-  float: right;
+  border: none;
+  opacity: 0.6;
+  background: #2c2c2c;
+  color: #fff;
 }
+.reset:hover{
+  background: #474747;
+}
+
 .btn.btn-outline-secondary.btn-go{
   color: #fff;
 }
@@ -107,6 +112,12 @@ div.btn.btn-link{
     color: #fff;
     text-shadow: 2px 2px 5px #000;
     font-size: 1.5rem;
+  }
+  .reset{
+    position: absolute;
+    display: block;
+    top: -48px;
+    right: 4%;
   }
   .box1 .checkbox{
   margin: 0 20px !important;
@@ -173,6 +184,12 @@ div.btn.btn-link{
     color: #fff;
     text-shadow: 2px 2px 5px #000;
     font-size: 7rem;
+  }
+  .reset{
+    position: absolute;
+    display: block;
+    top: -48px;
+    right: 4%;
   }
   .box1 .checkbox{
     margin: 0 20px !important;
@@ -257,6 +274,12 @@ div.btn.btn-link{
     overflow-x: hidden;
     overflow-y: auto;
     max-height: 500px;
+  }
+  .reset{
+    position: absolute;
+    display: block;
+    top: -48px;
+    right: -31%;
   }
   .box1 .checkbox{
     margin: 0 0px !important;

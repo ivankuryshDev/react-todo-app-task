@@ -1,19 +1,14 @@
 import React, { Component } from 'react';
 
-class addList extends Component {
-	constructor(props){
-		super(props);
-    this.onSubmit = this.onSubmit.bind(this);
-    this.onAddListInput = this.onAddListInput.bind(this);
-	}
+class AddList extends Component {
 
-	onSubmit(event){
+	onSubmit = (event) => {
 		event.preventDefault();
     this.props.onAddList(this.nameInput.value);
 		this.nameInput.value = '';
   }
   
-  onAddListInput(){
+  onAddListInput = () => {
     this.props.onAddListInput();
   }
 
@@ -37,4 +32,4 @@ class addList extends Component {
 		);
 	}
 }
-export default addList;
+export default AddList;
