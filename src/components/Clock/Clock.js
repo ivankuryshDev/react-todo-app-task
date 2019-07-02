@@ -10,7 +10,7 @@ class Clockf extends Component {
       <div className="row">
         <div className="col">
           <div className="time">
-            <Clock className="time-clock" format={'HH:mm'} ticking={true} timezone={'Europe/Warsaw'} />
+            <Clock className="time-clock" format={'HH:mm'} ticking={true} timezone={'Europe/Kyiv'} />
           </div>
         </div>
       </div>
